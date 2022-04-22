@@ -18,7 +18,6 @@ function deleteToDo(event) {
   } else {
     saveToDo();
   }
-  console.log(toDoArray);
 }
 
 function paintToDo(toDoObj) {
