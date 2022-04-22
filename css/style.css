@@ -1,3 +1,132 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fdfc97;
+}
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -5;
+  opacity: 0.8;
+}
 .hidden {
   display: none;
+}
+#login-form {
+  margin-top: 30px;
+  border-bottom: 3px solid #ffffff;
+}
+#login-form input {
+  border: none;
+  background: none;
+  width: 300px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 30px;
+}
+#login-form button {
+  height: 100%;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+#login-form button:hover {
+  background-color: ghostwhite;
+  color: black;
+}
+#login-form input::placeholder {
+  font-size: 30px;
+  color: #ffffff;
+}
+#login-form input:focus {
+  outline: none;
+}
+#greeting {
+  font-size: 50px;
+  cursor: default;
+}
+#clock {
+  cursor: default;
+  font-size: 120px;
+  font-weight: 600;
+}
+#todo-form {
+  margin-top: 50px;
+  width: 500px;
+  border-bottom: 2px solid #ffffff;
+}
+#todo-form input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fdfc97;
+  font-size: 30px;
+}
+#todo-form input:focus {
+  outline: none;
+}
+#todo-form input::placeholder {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+#todo-list {
+  margin-top: 10px;
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#todo-list span {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+#todo-list button {
+  background: none;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 10px;
+}
+#todo-list button:hover {
+  background-color: #ffffff;
+}
+#weather {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #2600ff;
+}
+#quote {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+#quote span {
+  margin-top: 10px;
 }
